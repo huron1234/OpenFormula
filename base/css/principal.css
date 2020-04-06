@@ -1,0 +1,28 @@
+.btn-general{
+	background-color: rgb(64,64,64);
+}
+.refcolor{
+	color: white;
+}
+.coloritemsmenu{
+	color: black;
+}
+.imgsmenu{
+	padding-left: 10px;
+	padding-right: 20px;
+}
+.btntemp{
+	background-color: red;
+}
+.enlaces{
+	text-decoration: none;
+}
+.padding-tarjetas{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.header-tarjeta{
+	color: white;
+}
