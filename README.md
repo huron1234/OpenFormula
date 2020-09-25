@@ -1,4 +1,7 @@
 # OpenFormula
-The first app where you can consult all the existing formulas. Everyone can suggest, everyone can use it.
 
-This app is on development, this is why have a lot of errors. Feel free to cooperate.
+La primera app donde puedes consultar todas las fórmulas existentes. Todos pueden sugerir, todos pueden usarla.
+
+Esta app será archivada, puedes continuar descargando las versiones existentes, sin embargo la app no se actualizará.
+
+Consulta https://kutt.it/huron1234blog para conocer novedades acerca del desarrollo de la app.
