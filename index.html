@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="imgs/favicon.ico" type="image/ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+	<title>OpenFormula</title>
+	<style type="text/css">
+		.img-center{
+			text-align: center;
+		}
+		body{
+			background-color: #181A1B;
+		}
+		.bottom-extra{
+			padding-bottom: 70px;
+		}
+		.bg-header{
+			background-color: #181A1B;
+		}
+		.hr{
+			color: white;
+			background-color: white;
+			margin: .5em;
+			border-radius: 100px;
+		}
+		.total-center{
+			text-align: center;
+			vertical-align: center;
+		}
+	</style>
+</head>
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+			<a href="#" class="navbar-brand"><img src="imgs/logo.svg" width="30" height="30" class="d-inline-block text-center"> OpenFormula</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarToggler">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"><a href="subpages/mathSearch.html" class="nav-link">Matemáticas</a></li>
+					<li class="nav-item"><a href="#" class="nav-link disabled">Física</a></li>
+					<li class="nav-item"><a href="#" class="nav-link disabled">Otros</a></li>
+					<li class="nav-item"><a href="#" class="nav-link disabled">Donaciones</a></li>
+					<li class="nav-item"><a href="subpages/about.html" class="nav-link">Acerca De</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Alert Cookies -->
+	<div class="alert alert-info text-center" role="alert">Este sitio usa &#127850 cookies, consulta más información <a href="" class="alert-link">aquí </a><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button></div>
+
+		<!-- Header Btn -->
+		<div class="card bg-header text-white text-center bottom-extra">
+			<div class="text-center">
+				<img src="imgs/logo.svg" class="card-img" alt="..." style="max-width: 30%">
+			</div>
+		  <div class="card-img-overlay">
+		  	<div class="text-center position-absolute bottom-0 start-50">
+		  		<a href="subpages/mathSearch.html" class="btn btn-dark"><span class="badge bg-warning">Bajo Pruebas</span>Consulta Fórmula Matemática</a>
+		  	</div>
+		  	<div class="text-center position-absolute bottom-0 end-50">
+		  		<a href="#" class="btn btn-dark"><span class="badge bg-danger">No disponible</span> Consulta Fórmula Física</a>
+		  	</div>
+		  </div>
+		</div>
+
+	<!-- Horizontal Rule Divide Content -->
+	<div class="hr">
+		<hr style="height: 5px" class="hr">
+	</div>
+
+	<!-- Info Cards -->
+	<div class="card mb-3 bg-dark text-white" style="max-width: 100%;">
+		<div class="row g-0">
+			<div class="col-md-4 d-flex justify-content-center">
+				<img src="imgs/mathsandphysics.svg" style="max-width: 30%">
+			</div>
+			<div class="col-md-8">
+				<div class="card-body">
+					<h5 class="card-title">Una herramienta con un amplio uso</h5>
+					<p class="card-text">OpenFormula te ofrece acceso a una base de fórmulas cada día más creciente, además te ofrece acceso a otras bases de datos que se actualizan constantemente.</p>
+					<p class="card-text">Esta herramienta te dará acceso a otros anexos útiles para distintos campos, así como algunas calculadoras para que puedas aumentar la eficiencia de tu trabajo.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="card mb-3 bg-dark text-white" style="max-width: 100%;">
+		<div class="row g-0">
+			<div class="col-md-4 d-flex justify-content-center">
+				<img src="imgs/freecost.svg" style="max-width: 30%">
+			</div>
+			<div class="col-md-8">
+				<div class="card-body">
+					<h5 class="card-title">Una herramienta totalmente gratuita</h5>
+					<p class="card-text">El acceso a la información se ha limitado con el paso del tiempo, por lo que es importante que todo mundo pueda acceder a esta información.</p>
+					<p class="card-text">OpenFormula es y siempre será gratuito, el acceso a la información debe ser así, sin embargo las donaciones al proyecto son posibles, esto para poder costear el host y otros gastos.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="card mb-3 bg-dark text-white" style="max-width: 100%;">
+		<div class="row g-0">
+			<div class="col-md-4 d-flex justify-content-center">
+				<img src="imgs/opensource.svg" style="max-width: 30%">
+			</div>
+			<div class="col-md-8">
+				<div class="card-body">
+					<h5 class="card-title">Una herramienta hecho con y por el código libre</h5>
+					<p class="card-text">El software libre es el futuro de la informática, gracias a ello es posible que funcionen grandes empresas y otros programas de la vida común.</p>
+					<p class="card-text">OpenFormula está construido con herramientas de código libre y en apoyo a esto, este proyecto también es de código libre.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="bg-dark text-center text-white sticky-bottom">
+	  <!-- Grid container -->
+	  <div class="container p-4 pb-0">
+	    <!-- Social media -->
+	    <section class="mb-4">
+   
+
+	      <!-- GitHub -->
+	      <a class="btn btn-light btn-floating m-1" href="https://github.com/UriMtzF/OpenFormula" role="button">
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+			<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+			</svg>
+			GitHub
+	      </a>
+
+
+	      <!-- Errors -->
+	      <a class="btn btn-light btn-floating m-1" href="https://github.com/UriMtzF/OpenFormula/issues" role="button">
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bug-fill" viewBox="0 0 16 16">
+			<path d="M4.978.855a.5.5 0 1 0-.956.29l.41 1.352A4.985 4.985 0 0 0 3 6h10a4.985 4.985 0 0 0-1.432-3.503l.41-1.352a.5.5 0 1 0-.956-.29l-.291.956A4.978 4.978 0 0 0 8 1a4.979 4.979 0 0 0-2.731.811l-.29-.956z"/>
+			<path d="M13 6v1H8.5v8.975A5 5 0 0 0 13 11h.5a.5.5 0 0 1 .5.5v.5a.5.5 0 1 0 1 0v-.5a1.5 1.5 0 0 0-1.5-1.5H13V9h1.5a.5.5 0 0 0 0-1H13V7h.5A1.5 1.5 0 0 0 15 5.5V5a.5.5 0 0 0-1 0v.5a.5.5 0 0 1-.5.5H13zm-5.5 9.975V7H3V6h-.5a.5.5 0 0 1-.5-.5V5a.5.5 0 0 0-1 0v.5A1.5 1.5 0 0 0 2.5 7H3v1H1.5a.5.5 0 0 0 0 1H3v1h-.5A1.5 1.5 0 0 0 1 11.5v.5a.5.5 0 1 0 1 0v-.5a.5.5 0 0 1 .5-.5H3a5 5 0 0 0 4.5 4.975z"/>
+			</svg>
+			Reporta un error
+	      </a>
+
+	      <!-- Help -->
+	      <a class="btn btn-light btn-floating m-1" href="#!" role="button">
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+			<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+			</svg>
+			Ayuda
+	      </a>
+	    </section>
+	  </div>
+	</footer>
+</body>
+</html>

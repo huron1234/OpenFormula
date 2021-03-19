@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF SYSTEM "http://purl.org/dc/schemas/dcmes-xml-20000714.dtd">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc ="http://purl.org/dc/elements/1.1/">
+<rdf:Description about="http://foo.edu/dl/report-1">
+<?xml-stylesheet type="text/xsl" href="print.xsl" ?>
+
+	<formulas>
+		<formula category="geometry">
+			<dc:title>Área de un círculo</dc:title>
+			<dc:formula>\pi \ r^{2}</dc:formula>
+			<dc:tags>geometría círculo geometria circulo</dc:tags>
+		</formula>
+	</formulas>
+
+</rdf:Description>
+</rdf:RDF>

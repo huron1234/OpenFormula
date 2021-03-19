@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF SYSTEM "http://purl.org/dc/schemas/dcmes-xml-20000714.dtd">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc ="http://purl.org/dc/elements/1.1/">
+<rdf:Description about="http://foo.edu/dl/report-1">
+<?xml-stylesheet type="text/xsl" href="print.xsl" ?>
+
+	<formulas>
+		<formula category="mecanica">
+			<dc:title>Velocidad o Rapidez</dc:title>
+			<dc:formula>\frac{d}{t}</dc:formula>
+			<dc:units>metros(m);segundos(s)</dc:units>
+			<dc:tags>mecánica mecanica velocidad rapidez tiempo distancia</dc:tags>
+		</formula>
+		<formula>
+			<dc:title></dc:title>
+			<dc:formula></dc:formula>
+			<dc:units></dc:units>
+			<dc:tags></dc:tags>
+		</formula>
+	</formulas>
+
+</rdf:Description>
+</rdf:RDF>

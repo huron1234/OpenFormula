@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="../imgs/favicon.ico" type="image/ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+	<title>OpenFormula</title>
+	<style type="text/css">
+		.img-center{
+			text-align: center;
+		}
+		body{
+			background-color: #181A1B;
+		}
+		.bottom-extra{
+			padding-bottom: 50px;
+		}
+		.bg-header{
+			background-color: #181A1B;
+		}
+		.hr{
+			color: white;
+			background-color: white;
+			margin: .5em;
+			border-radius: 100px;
+		}
+		.total-center{
+			text-align: center;
+			vertical-align: center;
+		}
+	</style>
+</head>
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+			<a href="../index.html" class="navbar-brand"><img src="../imgs/logo.svg" width="30" height="30" class="d-inline-block text-center"> OpenFormula</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarToggler">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"><a href="mathSearch.html" class="nav-link">Matemáticas</a></li>
+					<li class="nav-item"><a href="#" class="nav-link disabled">Física</a></li>
+					<li class="nav-item"><a href="#" class="nav-link disabled">Otros</a></li>
+					<li class="nav-item"><a href="#" class="nav-link disabled">Donaciones</a></li>
+					<li class="nav-item"><a href="#" class="nav-link active">Acerca De</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="bg-dark text-white">
+		<ul class="nav nav-tabs" id="licenses" role="tablist">
+			<li class="nav-item" role="presentation">
+				<button class="nav-link-active btn btn-secondary" id="ownLicenseTab" data-bs-toggle="tab" data-bs-target="#ownLicense" type="button" role="tab" aria-controls="ownLicense" aria-selected="true">Licencia OpenFormula</button>
+			</li>
+			<li class="nav-item" role="presentation">
+				<button class="nav-link-active btn btn-secondary" id="bootstrapTab" data-bs-toggle="tab" data-bs-target="#bootstrap" type="button" role="tab" aria-controls="bootstrap" aria-selected="false">Bootstrap</button>
+			</li>
+			<li class="nav-item" role="presentation">
+				<button class="nav-link-active btn btn-secondary" id="katexTab" data-bs-toggle="tab" data-bs-target="#katex" type="button" role="tab" aria-controls="katex" aria-selected="false">Katex</button>
+			</li>
+			<li class="nav-item" role="presentation">
+				<button class="nav-link-active btn btn-secondary" id="katexElementTab" data-bs-toggle="tab" data-bs-target="#katexElement" type="button" role="tab" aria-controls="katexElement" aria-selected="false">Katex-Element</button>
+			</li>
+			<li class="nav-item" role="presentation">
+				<button class="nav-link-active btn btn-secondary" id="imgsLicensesTab" data-bs-toggle="tab" data-bs-target="#imgsLicenses" type="button" role="tab" aria-controls="imgsLicenses" aria-selected="false">Licencias Imágenes</button>
+			</li>
+		</ul>
+		<div class="tab-content" id="licensesContent">
+			<div class="tab-pane fade show active" id="ownLicense" role="tabpanel" aria-labelledby="ownLicenseTab">
+				<p>La página web OpenFormual, así como las bases de datos y el resto de derivados están protegidos por la licencia GNU General Public License en su versión 3, en términos generales la licencia te permite modificar este código, usarlo para uso privado o hacer copias públicas bajo la misma licencia. Por favor, <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">consulta el siguient enlace para conocer la licencia completa.</a></p>
+				<p><span class="badge bg-danger">Importante</span>Se le ofrece una traducción no oficial al español a los usuarios que no tengan la posibilidad de entender la licencia en su idioma original, sin embargo, esta traducción no representa ninguna condición legal para este ni ningún otro software o código derivado de OpenFormula.<a href="https://lslspanish.github.io/translation_GPLv3_to_spanish/">Consulta la licencia en Español.</a> </p>
+			</div>
+			<div class="tab-pane fade" id="bootstrap" role="tabpanel" aria-labelledby="bootstrapTab">
+				<p>
+				Bootstrap es el principal impulsor de este proyecto, siendo este el responsable de casi todos los estilos de la página
+				</p>
+				<p>En este proyecto se hace uso de Bootstrap en su versión Beta 5, la cual se encuentra bajo la licencia MIT, esta licencia puede ser encontrada en su <a href="https://github.com/twbs/bootstrap" class="btn btn-outline-info btn-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg> Repositorio de GitHub
+				</a></p>
+				<p>Puedes consultar la <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" class="btn btn-outline-info btn-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412l-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></svg>Licencia MIT</a></p>
+				<p>Así mismo se hace uso de Bootstrap Icons, herramienta que también se encuentra bajo la <a href="https://github.com/twbs/icons/blob/main/LICENSE.md" class="btn btn-outline-info btn-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412l-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></svg>Licencia MIT</a></p>
+				<p>Por último, todas el código, imágenes e íconos usados en este proyecto, obtenidos de Bootstrap pertenecen a los autores de Bootstrap y únicamente en el caso de Bootstrap también a Twitter, Inc.</p>
+			</div>
+			<div class="tab-pane fade" id="katex" role="tabpanel" aria-labelledby="katexTab">
+				<p>Katex es el motor visual para mostrar todas las matemáticas de una manera natural, de no ser por Katex sería casi imposible visualizar las fórmulas en su forma natural, así mismo ahorra mucho tiempo en la construcción de bases de datos, permitiendo a todo mundo (con ayuda de otras herramientas) el apoyar con nuevas fórmulas.</p>
+				<p>Más información de Katex puede ser consultada en su <a href="https://katex.org/" class="btn btn-outline-info btn-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/></svg>Web</a></p>
+				<p>Este software es de código libre y se encuentra bajo la <a href="https://github.com/KaTeX/KaTeX/blob/master/LICENSE" class="btn btn-outline-info btn-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412l-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></svg>Licencia MIT</a> la cual puede ser consultada en el botón anterior, o bien puedes bucarla en su <a href="https://github.com/KaTeX/KaTeX" class="btn btn-outline-info btn-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>Repositorio de GitHub</a></p>
+				<p>Quedan todos los derechos reservado a Khan Academy y otros contribuidores</p>
+			</div>
+			<div class="tab-pane fade" id="katexElement" role="tabpanel" aria-labelledby="katexTab">
+				<p>Katex-Element es una herramienta que permite hacer uso de la etiqueta "katex-element" para poder mostrar con ayuda de Katex las fórmulas de manera natural. Sin esta pequeña herramienta sería imposible poder visualizar correctamente las fórmulas en las bases de datos.</p>
+				<p>Katex-Element sólo cuenta con un <a href="https://github.com/georges-gomes/katex-element" class="btn btn-outline-info btn-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>Repositorio en Github</a></p>
+				<p>Así mismo, este software se encuentra bajo la <a href="https://github.com/georges-gomes/katex-element/blob/master/LICENSE" class="btn btn-outline-info btn-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412l-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></svg>Licencia Mit</a></p>
+				<p>Todos los derechos reservados a "riots"</p>
+			</div>
+			<div class="tab-pane fade" id="imgsLicenses" role="tabpanel" aria-labelledby="imgsLicensesTab">
+				<p>OpenFormula hace uso un par de imagenes propias y otras de uso libre, las cuales se encuentra bajo la siguientes licencias.</p>
+				<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">OpenFormula Logo</span> por <span property="cc:attributionName">Uri Martínez</span> se encuentra bajo la licencia <a href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"></a></p>
+				<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://commons.wikimedia.org/wiki/File:Owl_money_by_mimooh.svg">Owl money</a> por <span property="cc:attributionName">mimooh</span> se encuentra bajo la licencia <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+				Math por el usuario <a href="https://commons.wikimedia.org/wiki/User:Joey-das-WBF">Joey-das-WBF</a> de Wikimedia Commons, se encuentra bajo el dominio público, sin embargo, el reconocimiento para el autor.
+				<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://commons.wikimedia.org/w/index.php?curid=88924950">WikiProject Physics Logo (Deus WikiProjects)</a> por <span property="cc:attributionName">Bruce The Deus</span> se encuentra bajo la licencia <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+				<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://commons.wikimedia.org/w/index.php?curid=64103402">Button DINA Schwerpunkte Parldigi 01 Open Source Software</a> por <span property="cc:attributionName">Jon Opprecht</span> está marcado por <a href="http://creativecommons.org/publicdomain/zero/1.0?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC0 1.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1"></a></p>
+				<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">Maths and Physics</span> por <span property="cc:attributionName">Uri Martínez</span> se encuentra bajo la licencia <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="../imgs/favicon.ico" type="image/ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.css" integrity="sha384-t5CR+zwDAROtph0PXGte6ia8heboACF9R5l/DiY+WZ3P2lxNgvJkQk5n7GPvLMYw" crossorigin="anonymous">
+    <!-- SpeedUp Katex Loading -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.js" integrity="sha384-FaFLTlohFghEIZkw6VGwmf9ISTubWAVYW8tG8+w2LAIftJEULZABrF9PPFv+tVkH" crossorigin="anonymous"></script>
+    <!-- Katex Autorender -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/contrib/auto-render.min.js" integrity="sha384-bHBqxz8fokvgoJ/sc17HODNxa42TlaEhB+w8ZJXTc2nZf1VgEaFZeZvT4Mznfz0v" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+    <script src="dist/katex-element.umd.js" type="module"></script>
+    <script language="JavaScript" type="text/javascript">
+    	function ConnectXML(dname) // Funcion para buscar base de datos xml.
+		{
+		    if (window.XMLHttpRequest)
+		    {
+		        xhttp= new XMLHttpRequest(); // Conectar via httprequest para nuevos navegadores.
+		    }
+		    else
+		    {
+		        xhttp= new ActiveXObject("Microsoft.XMLHTTP"); // Conectar via httprequest para navegadores mas viejos.
+		    }
+		    xhttp.open("GET",dname,false); //Abre base de datos XML usando "dname"
+		    xhttp.send(); //Enviando los datos de archivo a un objeto xhttp.
+		    return xhttp.responseXML; //Regresa una respuesta XML.
+		}
+		//Buscar por titulo.
+		function title_search()
+		{
+
+		xmlDoc = ConnectXML("maths.xml"); //Obteniendo respuesta de la funcion.
+		var x= xmlDoc.getElementsByTagName("dc:title"); //Asignar todas las etiquetas con titulo.
+		var input = document.getElementById("input1").value; //Leer el input del usuario.
+		var size =input.length;
+		if(input == null || input == ""){ //Revisa si el input esta vacio.
+		    document.getElementById("results_title").innerHTML="Por favor introduce un nombre";
+		    return false;
+		}
+
+		for( i=0; i<x.length; i++) //Loop hasta encontrar todos los datos coincidentes.
+		{
+		    tit =xmlDoc.getElementsByTagName("dc:title")[i].childNodes[0].nodeValue;
+		    startString = tit.substring(0,size);
+		    if(startString.toLowerCase() == input.toLowerCase()){
+		            title =xmlDoc.getElementsByTagName("dc:title")[i].childNodes[0].nodeValue;
+		            formula =xmlDoc.getElementsByTagName("dc:formula")[i].childNodes[0].nodeValue;
+		            tags =xmlDoc.getElementsByTagName("dc:tags")[i].childNodes[0].nodeValue;
+		            divText = "<h3>Los resultados de tu búsqueda son:</h3><br/><table border=2><tr><th>Título</th><th>Fórmula</th></tr>" + "<tr><td>" + title + "</td><td><katex-element>" + formula + "</katex-element></td></tr>" + "</table>";
+		            break;
+		    }
+		    else
+		    {
+		        divText="<h2>Esa fórmula no existe o no ha sido registrada.</h2>";
+		    }
+		}
+		document.getElementById("results_title").innerHTML=divText;
+		}
+    </script>
+	<title>OpenFormula</title>
+	<style type="text/css">
+		.img-center{
+			text-align: center;
+		}
+		body{
+			background-color: #181A1B;
+		}
+		.bottom-extra{
+			padding-bottom: 50px;
+		}
+		.bg-header{
+			background-color: #181A1B;
+		}
+		.hr{
+			color: white;
+			background-color: white;
+			margin: .5em;
+			border-radius: 100px;
+		}
+		.total-center{
+			text-align: center;
+			vertical-align: center;
+		}
+		th{
+			width: 50%;
+			text-align: center;
+			border-color: white;
+		}
+		td{
+			width: 50%;
+			text-align: center;
+			border-color: white;
+		}
+		table{
+			width: 100%;
+			border-color: white;
+		}
+	</style>
+</head>
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+			<a href="../index.html" class="navbar-brand"><img src="../imgs/logo.svg" width="30" height="30" class="d-inline-block text-center"> OpenFormula</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarToggler">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"><a href="#" class="nav-link ative">Matemáticas</a></li>
+					<li class="nav-item"><a href="#" class="nav-link disabled">Física</a></li>
+					<li class="nav-item"><a href="#" class="nav-link disabled">Otros</a></li>
+					<li class="nav-item"><a href="#" class="nav-link disabled">Donaciones</a></li>
+					<li class="nav-item"><a href="about.html" class="nav-link">Acerca De</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="d-flex">
+		<input type="text" name="title" id="input1" class="form-control me-2">	
+		<input type="submit" value="Buscar" onClick="title_search()">
+	</div>
+	<div id="results_title" class="table table-dark table-striped"></div>
+</body>
+</html>
